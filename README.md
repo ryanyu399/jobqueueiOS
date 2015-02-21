@@ -10,3 +10,4 @@ MasterViewController is pushed again.
 The application works as the MasterViewController with a TableViewController that displays the job and the 
 status of the application (open/close) and any new job opening will be set automatically to open. 
 
+The data of the objects are designed as a Dictionary with {"title", "open", "date"}
