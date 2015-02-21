@@ -1,0 +1,525 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3DEA81741A98833C00774A39 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DEA81731A98833C00774A39 /* main.m */; };
+		3DEA817A1A98833C00774A39 /* MassDropJobQueue.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3DEA81781A98833C00774A39 /* MassDropJobQueue.xcdatamodeld */; };
+		3DEA81821A98833C00774A39 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DEA81811A98833C00774A39 /* Images.xcassets */; };
+		3DEA81851A98833C00774A39 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DEA81831A98833C00774A39 /* LaunchScreen.xib */; };
+		3DEA81911A98833C00774A39 /* MassDropJobQueueTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DEA81901A98833C00774A39 /* MassDropJobQueueTests.m */; };
+		3DEA819C1A9883F500774A39 /* Job.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DEA819B1A9883F500774A39 /* Job.m */; };
+		3DEA819F1A9883F500774A39 /* Queue.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DEA819E1A9883F500774A39 /* Queue.m */; };
+		3DEA81A81A98840D00774A39 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DEA81A11A98840D00774A39 /* AppDelegate.m */; };
+		3DEA81A91A98840D00774A39 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DEA81A31A98840D00774A39 /* MasterViewController.m */; };
+		3DEA81AA1A98840D00774A39 /* AddData.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DEA81A51A98840D00774A39 /* AddData.m */; };
+		3DEA81AB1A98840D00774A39 /* JobTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DEA81A71A98840D00774A39 /* JobTableViewCell.m */; };
+		3DEA81AD1A98844900774A39 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DEA81AC1A98844900774A39 /* Main.storyboard */; };
+		511EC6DD4444FFF0174FDC43 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0952C92A7199A2334142ECF5 /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3DEA818B1A98833C00774A39 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3DEA81661A98833C00774A39 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3DEA816D1A98833C00774A39;
+			remoteInfo = MassDropJobQueue;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0952C92A7199A2334142ECF5 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		13094579689A156B1DFF4577 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		21440DB93745E8933EEC6E0D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		3DEA816E1A98833C00774A39 /* MassDropJobQueue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MassDropJobQueue.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DEA81721A98833C00774A39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DEA81731A98833C00774A39 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3DEA81791A98833C00774A39 /* MassDropJobQueue.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MassDropJobQueue.xcdatamodel; sourceTree = "<group>"; };
+		3DEA81811A98833C00774A39 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3DEA81841A98833C00774A39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		3DEA818A1A98833C00774A39 /* MassDropJobQueueTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MassDropJobQueueTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DEA818F1A98833C00774A39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DEA81901A98833C00774A39 /* MassDropJobQueueTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MassDropJobQueueTests.m; sourceTree = "<group>"; };
+		3DEA819A1A9883F500774A39 /* Job.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Job.h; sourceTree = "<group>"; };
+		3DEA819B1A9883F500774A39 /* Job.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Job.m; sourceTree = "<group>"; };
+		3DEA819D1A9883F500774A39 /* Queue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Queue.h; sourceTree = "<group>"; };
+		3DEA819E1A9883F500774A39 /* Queue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Queue.m; sourceTree = "<group>"; };
+		3DEA81A01A98840D00774A39 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3DEA81A11A98840D00774A39 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3DEA81A21A98840D00774A39 /* MasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		3DEA81A31A98840D00774A39 /* MasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		3DEA81A41A98840D00774A39 /* AddData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddData.h; sourceTree = "<group>"; };
+		3DEA81A51A98840D00774A39 /* AddData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddData.m; sourceTree = "<group>"; };
+		3DEA81A61A98840D00774A39 /* JobTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JobTableViewCell.h; sourceTree = "<group>"; };
+		3DEA81A71A98840D00774A39 /* JobTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JobTableViewCell.m; sourceTree = "<group>"; };
+		3DEA81AC1A98844900774A39 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3DEA816B1A98833C00774A39 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				511EC6DD4444FFF0174FDC43 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DEA81871A98833C00774A39 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3DEA81651A98833C00774A39 = {
+			isa = PBXGroup;
+			children = (
+				3DEA81701A98833C00774A39 /* MassDropJobQueue */,
+				3DEA818D1A98833C00774A39 /* MassDropJobQueueTests */,
+				3DEA816F1A98833C00774A39 /* Products */,
+				631D8A08520B4B613BE79E0B /* Pods */,
+				64964CDD8DA8D79E9C903F5F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3DEA816F1A98833C00774A39 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3DEA816E1A98833C00774A39 /* MassDropJobQueue.app */,
+				3DEA818A1A98833C00774A39 /* MassDropJobQueueTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3DEA81701A98833C00774A39 /* MassDropJobQueue */ = {
+			isa = PBXGroup;
+			children = (
+				3DEA81A01A98840D00774A39 /* AppDelegate.h */,
+				3DEA81A11A98840D00774A39 /* AppDelegate.m */,
+				3DEA81A21A98840D00774A39 /* MasterViewController.h */,
+				3DEA81A31A98840D00774A39 /* MasterViewController.m */,
+				3DEA81A41A98840D00774A39 /* AddData.h */,
+				3DEA81A51A98840D00774A39 /* AddData.m */,
+				3DEA81A61A98840D00774A39 /* JobTableViewCell.h */,
+				3DEA81A71A98840D00774A39 /* JobTableViewCell.m */,
+				3DEA81AC1A98844900774A39 /* Main.storyboard */,
+				3DEA81811A98833C00774A39 /* Images.xcassets */,
+				3DEA81831A98833C00774A39 /* LaunchScreen.xib */,
+				3DEA81781A98833C00774A39 /* MassDropJobQueue.xcdatamodeld */,
+				3DEA819D1A9883F500774A39 /* Queue.h */,
+				3DEA819E1A9883F500774A39 /* Queue.m */,
+				3DEA819A1A9883F500774A39 /* Job.h */,
+				3DEA819B1A9883F500774A39 /* Job.m */,
+				3DEA81711A98833C00774A39 /* Supporting Files */,
+			);
+			path = MassDropJobQueue;
+			sourceTree = "<group>";
+		};
+		3DEA81711A98833C00774A39 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3DEA81721A98833C00774A39 /* Info.plist */,
+				3DEA81731A98833C00774A39 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3DEA818D1A98833C00774A39 /* MassDropJobQueueTests */ = {
+			isa = PBXGroup;
+			children = (
+				3DEA81901A98833C00774A39 /* MassDropJobQueueTests.m */,
+				3DEA818E1A98833C00774A39 /* Supporting Files */,
+			);
+			path = MassDropJobQueueTests;
+			sourceTree = "<group>";
+		};
+		3DEA818E1A98833C00774A39 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3DEA818F1A98833C00774A39 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		631D8A08520B4B613BE79E0B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				21440DB93745E8933EEC6E0D /* Pods.debug.xcconfig */,
+				13094579689A156B1DFF4577 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		64964CDD8DA8D79E9C903F5F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0952C92A7199A2334142ECF5 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3DEA816D1A98833C00774A39 /* MassDropJobQueue */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DEA81941A98833C00774A39 /* Build configuration list for PBXNativeTarget "MassDropJobQueue" */;
+			buildPhases = (
+				83A13DA524B5BA05B0FCB7C5 /* Check Pods Manifest.lock */,
+				3DEA816A1A98833C00774A39 /* Sources */,
+				3DEA816B1A98833C00774A39 /* Frameworks */,
+				3DEA816C1A98833C00774A39 /* Resources */,
+				908FBCD45B430AB9F9B4A84D /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MassDropJobQueue;
+			productName = MassDropJobQueue;
+			productReference = 3DEA816E1A98833C00774A39 /* MassDropJobQueue.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3DEA81891A98833C00774A39 /* MassDropJobQueueTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DEA81971A98833C00774A39 /* Build configuration list for PBXNativeTarget "MassDropJobQueueTests" */;
+			buildPhases = (
+				3DEA81861A98833C00774A39 /* Sources */,
+				3DEA81871A98833C00774A39 /* Frameworks */,
+				3DEA81881A98833C00774A39 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3DEA818C1A98833C00774A39 /* PBXTargetDependency */,
+			);
+			name = MassDropJobQueueTests;
+			productName = MassDropJobQueueTests;
+			productReference = 3DEA818A1A98833C00774A39 /* MassDropJobQueueTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3DEA81661A98833C00774A39 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Ryan Yu";
+				TargetAttributes = {
+					3DEA816D1A98833C00774A39 = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+					3DEA81891A98833C00774A39 = {
+						CreatedOnToolsVersion = 6.0.1;
+						TestTargetID = 3DEA816D1A98833C00774A39;
+					};
+				};
+			};
+			buildConfigurationList = 3DEA81691A98833C00774A39 /* Build configuration list for PBXProject "MassDropJobQueue" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3DEA81651A98833C00774A39;
+			productRefGroup = 3DEA816F1A98833C00774A39 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3DEA816D1A98833C00774A39 /* MassDropJobQueue */,
+				3DEA81891A98833C00774A39 /* MassDropJobQueueTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3DEA816C1A98833C00774A39 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DEA81851A98833C00774A39 /* LaunchScreen.xib in Resources */,
+				3DEA81AD1A98844900774A39 /* Main.storyboard in Resources */,
+				3DEA81821A98833C00774A39 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DEA81881A98833C00774A39 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		83A13DA524B5BA05B0FCB7C5 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		908FBCD45B430AB9F9B4A84D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3DEA816A1A98833C00774A39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DEA819C1A9883F500774A39 /* Job.m in Sources */,
+				3DEA81741A98833C00774A39 /* main.m in Sources */,
+				3DEA817A1A98833C00774A39 /* MassDropJobQueue.xcdatamodeld in Sources */,
+				3DEA81AB1A98840D00774A39 /* JobTableViewCell.m in Sources */,
+				3DEA819F1A9883F500774A39 /* Queue.m in Sources */,
+				3DEA81A91A98840D00774A39 /* MasterViewController.m in Sources */,
+				3DEA81A81A98840D00774A39 /* AppDelegate.m in Sources */,
+				3DEA81AA1A98840D00774A39 /* AddData.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DEA81861A98833C00774A39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DEA81911A98833C00774A39 /* MassDropJobQueueTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3DEA818C1A98833C00774A39 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3DEA816D1A98833C00774A39 /* MassDropJobQueue */;
+			targetProxy = 3DEA818B1A98833C00774A39 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3DEA81831A98833C00774A39 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3DEA81841A98833C00774A39 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3DEA81921A98833C00774A39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3DEA81931A98833C00774A39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3DEA81951A98833C00774A39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21440DB93745E8933EEC6E0D /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MassDropJobQueue/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3DEA81961A98833C00774A39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13094579689A156B1DFF4577 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MassDropJobQueue/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		3DEA81981A98833C00774A39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MassDropJobQueueTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MassDropJobQueue.app/MassDropJobQueue";
+			};
+			name = Debug;
+		};
+		3DEA81991A98833C00774A39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MassDropJobQueueTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MassDropJobQueue.app/MassDropJobQueue";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3DEA81691A98833C00774A39 /* Build configuration list for PBXProject "MassDropJobQueue" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DEA81921A98833C00774A39 /* Debug */,
+				3DEA81931A98833C00774A39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DEA81941A98833C00774A39 /* Build configuration list for PBXNativeTarget "MassDropJobQueue" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DEA81951A98833C00774A39 /* Debug */,
+				3DEA81961A98833C00774A39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DEA81971A98833C00774A39 /* Build configuration list for PBXNativeTarget "MassDropJobQueueTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DEA81981A98833C00774A39 /* Debug */,
+				3DEA81991A98833C00774A39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3DEA81781A98833C00774A39 /* MassDropJobQueue.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3DEA81791A98833C00774A39 /* MassDropJobQueue.xcdatamodel */,
+			);
+			currentVersion = 3DEA81791A98833C00774A39 /* MassDropJobQueue.xcdatamodel */;
+			path = MassDropJobQueue.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 3DEA81661A98833C00774A39 /* Project object */;
+}
